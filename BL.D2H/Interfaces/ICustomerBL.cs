@@ -1,0 +1,16 @@
+﻿using Models.D2H.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BL.D2H.Interfaces
+{
+    public interface ICustomerBL
+    {
+        void AddNewCustomer(AddNewCustomer obj);
+        List<Customer> GetAll();
+        List<Customer> GetAllCustomerWithName(string CustomerName);
+    }
+}
